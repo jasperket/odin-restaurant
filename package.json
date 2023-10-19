@@ -1,0 +1,23 @@
+{
+  "name": "odin-restaurant",
+  "version": "1.0.0",
+  "description": "Restaurant page with webpack",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/jasperket/odin-restaurant.git"
+  },
+  "keywords": [
+    "restaurant",
+    "theodinproject"
+  ],
+  "author": "jasperket <jasperkeith1.vallecera@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jasperket/odin-restaurant/issues"
+  },
+  "homepage": "https://github.com/jasperket/odin-restaurant#readme"
+}
