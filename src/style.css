@@ -1,0 +1,40 @@
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+}
+
+header {
+    background-color: black;
+    opacity: 50%;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 0.5rem 1rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.logo {
+    background: url('./logo.png');
+    background-size: cover;
+    height: 2rem;
+    width: 1.5rem;
+}
+
+nav ul h2 {
+    color: white;
+    margin-right: 2rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
