@@ -1,9 +1,15 @@
+:root {
+    --bg-color: #f2dbc0;
+    --dark-text: #362417;
+    --black: #04030F;
+}
+
 body {
-    font-family: 'Roboto', Arial, sans-serif;
+    font-family: Georgia, 'Times New Roman', serif;
 }
 
 header {
-    background-color: black;
+    background-color: #1A1A1A;
     opacity: 50%;
     position: fixed;
     top: 0;
@@ -11,30 +17,72 @@ header {
     padding: 0.5rem 1rem;
 }
 
+header:hover {
+    opacity: 100%;
+    transition: opacity 0.5s;
+}
+
 nav ul {
     list-style: none;
     display: flex;
-    gap: 1rem;
+    gap: 2rem;
     align-items: center;
+    margin-left: 5rem;
 }
 
 .logo {
-    background: url('./logo.png');
+    background: url('./images/logo.png');
     background-size: cover;
     height: 2rem;
     width: 1.5rem;
+    margin-right: -1rem;
 }
 
 nav ul h2 {
-    color: white;
+    color: #ECECEC;
     margin-right: 2rem;
 }
 
 nav ul li a {
     text-decoration: none;
-    color: white;
+    color: #ECECEC;
 }
 
 nav ul li a:hover {
     text-decoration: underline;
+}
+
+.hero {
+    background: url('./images/restaurant.jpg');
+    background-size: cover;
+    background-position: center center;
+    height: 20rem;
+}
+
+.description {
+    color: var(--dark-text);
+    background-color: var(--bg-color);
+    padding: 2rem 6rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.description.home {
+    min-height: calc(100vh - 20rem);
+}
+
+.description p {
+    width: 75ch;
+}
+
+.desc-pic {
+    align-self: stretch;
+    margin: -2rem -6rem;
+    background: url(./images/adobo.jpg);
+    background-size: cover;
+    background-position: right center;
+    min-height: 100%;
+    width: 20rem; 
 }
