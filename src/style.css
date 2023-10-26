@@ -2,6 +2,7 @@
     --bg-color: #f2dbc0;
     --dark-text: #362417;
     --black: #04030F;
+    --white: #ECECEC;
 }
 
 body {
@@ -39,17 +40,18 @@ nav ul {
 }
 
 nav ul h2 {
-    color: #ECECEC;
+    color: var(--white);
     margin-right: 2rem;
 }
 
 nav ul li a {
     text-decoration: none;
-    color: #ECECEC;
+    color: var(--white);
+    padding-block: 1rem;
 }
 
-nav ul li a:hover {
-    text-decoration: underline;
+nav ul li a:hover, .selected {
+    border-bottom: 2px solid var(--white);
 }
 
 .hero {
@@ -78,11 +80,17 @@ nav ul li a:hover {
 }
 
 .desc-pic {
-    align-self: stretch;
-    margin: -2rem -6rem;
+    height: 10rem;
+    border: 0.25rem solid var(--dark-text);
+    aspect-ratio: 1 / 1;
+}
+
+.desc-pic.adobo {
     background: url(./images/adobo.jpg);
     background-size: cover;
     background-position: right center;
-    min-height: 100%;
-    width: 20rem; 
+}
+
+.first-item {
+    margin-top: 4rem;
 }
