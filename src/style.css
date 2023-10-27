@@ -11,16 +11,10 @@ body {
 
 header {
     background-color: #1A1A1A;
-    opacity: 50%;
     position: fixed;
     top: 0;
     width: 100%;
     padding: 0.5rem 1rem;
-}
-
-header:hover {
-    opacity: 100%;
-    transition: opacity 0.5s;
 }
 
 nav ul {
@@ -79,6 +73,10 @@ nav ul li a:hover, .selected {
     width: 75ch;
 }
 
+.description.recipe {
+    border-bottom: 1px solid #362417;
+}
+
 .desc-pic {
     height: 10rem;
     border: 0.25rem solid var(--dark-text);
@@ -91,6 +89,18 @@ nav ul li a:hover, .selected {
     background-position: right center;
 }
 
+.desc-pic.karekare {
+    background: url(./images/karekare.jpg);
+    background-size: cover;
+    background-position: right center;
+}
+
+.desc-pic.lechon{
+    background: url(./images/lechon.jpg);
+    background-size: cover;
+    background-position: left center;
+}
+
 .first-item {
-    margin-top: 4rem;
+    margin-top: 3rem;
 }
