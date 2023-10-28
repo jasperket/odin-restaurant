@@ -5,8 +5,17 @@
     --white: #ECECEC;
 }
 
+.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24
+  }
+
 body {
     font-family: Georgia, 'Times New Roman', serif;
+    background-color: var(--bg-color);
 }
 
 header {
@@ -102,5 +111,28 @@ nav ul li a:hover, .selected {
 }
 
 .first-item {
+    margin-top: 3rem;
+}
+
+.icon-text {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.contact-container {
+    background-color: var(--bg-color);
+    color: var(--dark-text);
+    padding: 2rem 6rem;
+    display: flex;
+    gap: 5rem;
+}
+
+.contact-item:not(:last-child) {
+    margin-bottom: 1rem;
+}
+
+.contact-item.first-right {
     margin-top: 3rem;
 }

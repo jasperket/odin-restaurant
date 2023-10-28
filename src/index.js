@@ -2,6 +2,7 @@ import './reset.css';
 import './style.css';
 import homeHTML from './js-modules/home';
 import menuHTML from './js-modules/menu';
+import contactHTML from './js-modules/contact';
 
 const content = document.querySelector("#content");
 content.innerHTML = homeHTML;
@@ -24,7 +25,7 @@ btnMenu.addEventListener('click',()=>{
 
 const btnContact = document.querySelector("#contact-us");
 btnContact.addEventListener('click',()=>{
-    content.innerHTML = homeHTML;
+    content.innerHTML = contactHTML;
     btnHome.classList.remove("selected");
     btnMenu.classList.remove("selected");
     btnContact.classList.add("selected");
